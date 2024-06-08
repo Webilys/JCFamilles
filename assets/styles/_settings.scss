@@ -1,3 +1,22 @@
+//fonts
+
+@font-face {
+  font-family: "open-sans-regular";
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "open-sans-semi-bold";
+  src: url(../fonts/OpenSans-Semibold.ttf);
+}
+
+$font1: "open-sans-regular", "Trebuchet MS", "Lucida Sans Unicode",
+  "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+$font2: "open-sans-semi-bold", "Trebuchet MS", "Lucida Sans Unicode",
+  "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+
+//colors
+
 $color1: #00adef;
 $color2: #80cc28;
 $black: #000;
@@ -11,4 +30,14 @@ $text: #333;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $font1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font2;
 }
