@@ -1,7 +1,66 @@
-@import url(./_settings.scss);
-@import url(./layout/_header.scss);
-@import url(./layout/_main.scss);
-@import url(./layout/_footer.scss);
-@import url(./components/_buttons.scss);
-@import url(./components/_navbar.scss);
-@import url(./pages/_accueil.scss);/*# sourceMappingURL=index.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .desktopMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .desktopMenu ul li {
+  list-style: none;
+}
+header .desktopMenu ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+header .desktopMenu ul li a i {
+  margin-right: 10px;
+  font-size: 2rem;
+}
+header .desktopMenu .sup {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .desktopMenu .sup .logo a img {
+  width: 100%;
+}
+header .desktopMenu .sup .aboutMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+header .desktopMenu .sup .aboutMenu ul li a {
+  padding: 20px;
+}
+header .desktopMenu .inf nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .desktopMenu .inf nav ul li {
+  padding: 20px;
+}/*# sourceMappingURL=index.css.map */

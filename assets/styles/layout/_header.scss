@@ -1,2 +1,59 @@
 header {
+  //   .responsiveMenu {
+  //   }
+
+  .desktopMenu {
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      li {
+        list-style: none;
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          i {
+            margin-right: 10px;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+    .sup {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      align-items: center;
+      .logo {
+        a {
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .aboutMenu {
+        ul {
+          display: flex;
+          justify-content: space-evenly;
+          li {
+            a {
+              padding: 20px;
+            }
+          }
+        }
+      }
+    }
+    .inf {
+      nav {
+        ul {
+          display: flex;
+          li {
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
 }

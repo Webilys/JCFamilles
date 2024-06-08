@@ -1,7 +1,7 @@
-@import url(./_settings.scss);
-@import url(./layout/_header.scss);
-@import url(./layout/_main.scss);
-@import url(./layout/_footer.scss);
-@import url(./components/_buttons.scss);
-@import url(./components/_navbar.scss);
-@import url(./pages/_accueil.scss);
+@import "./_settings.scss";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+@import "./components/buttons";
+@import "./components/navbar";
+@import "./pages/accueil";
