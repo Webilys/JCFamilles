@@ -23,17 +23,6 @@ h6 {
   font-family: "open-sans-semi-bold", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-header .desktopMenu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 header .desktopMenu ul li {
   list-style: none;
 }
@@ -48,10 +37,21 @@ header .desktopMenu ul li a {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  padding: 20px;
+  text-align: center;
 }
 header .desktopMenu ul li a i {
   margin-right: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .desktopMenu .sup {
   display: grid;
@@ -59,9 +59,16 @@ header .desktopMenu .sup {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0;
 }
 header .desktopMenu .sup .logo a img {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   width: 100%;
+}
+header .desktopMenu .sup .logo a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 header .desktopMenu .sup .aboutMenu ul {
   display: -webkit-box;
@@ -70,15 +77,64 @@ header .desktopMenu .sup .aboutMenu ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .desktopMenu .sup .aboutMenu ul li a {
-  padding: 20px;
+  color: #000;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
-header .desktopMenu .inf nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+header .desktopMenu .sup .aboutMenu ul li a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #00adef;
 }
-header .desktopMenu .inf nav ul li {
-  padding: 20px;
+header .desktopMenu .sup .aboutMenu ul li:last-child a {
+  background: #00adef;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: #fff;
+}
+header .desktopMenu .sup .aboutMenu ul li:last-child a:hover {
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  background: #80cc28;
+}
+header .desktopMenu .inf {
+  background: #00adef;
+}
+header .desktopMenu .inf ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+header .desktopMenu .inf ul li {
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+}
+header .desktopMenu .inf ul li a {
+  height: 100%;
+  border-top: 2px solid transparent;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  color: #fff;
+}
+header .desktopMenu .inf ul li a:hover {
+  border-top: 3px solid #fff;
+  background: #80cc28;
+}
+header .desktopMenu .inf ul li a:hover i {
+  color: #80cc28;
+}
+header .desktopMenu .inf ul li a i {
+  color: #00adef;
+  background: #fff;
+  padding: 10px;
+  border-radius: 150px;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }/*# sourceMappingURL=index.css.map */
