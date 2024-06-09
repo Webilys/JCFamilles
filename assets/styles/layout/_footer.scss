@@ -1,2 +1,22 @@
 footer {
+  .containerFooter {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    div {
+      padding: 20px;
+    }
+
+    .logoFooter {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .copyright {
+    background: $color1;
+    padding: 20px 0;
+    text-align: center;
+    color: $white;
+  }
 }

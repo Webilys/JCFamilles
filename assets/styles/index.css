@@ -23,6 +23,81 @@ h6 {
   font-family: "open-sans-semi-bold", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+header .responsiveMenu {
+  display: none;
+}
+@media screen and (max-width: 1080px) {
+  header .responsiveMenu {
+    display: block;
+  }
+  header .responsiveMenu .logoIcons {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  }
+}
+@media screen and (max-width: 1080px) and (max-width: 730px) {
+  header .responsiveMenu .logoIcons {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (max-width: 1080px) and (max-width: 400px) {
+  header .responsiveMenu .logoIcons {
+    grid-template-columns: 70% 30%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  header .responsiveMenu .logoIcons .logo a img {
+    width: 100%;
+  }
+  header .responsiveMenu .logoIcons .menuIcons {
+    text-align: right;
+    margin-right: 30px;
+  }
+  header .responsiveMenu .logoIcons .menuIcons i {
+    font-size: 2rem;
+    color: #00adef;
+  }
+  header .responsiveMenu .logoIcons .menuIcons #closeIcon {
+    display: none;
+  }
+  header .responsiveMenu .navMenu nav {
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+  header .responsiveMenu .navMenu nav ul {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  }
+  header .responsiveMenu .navMenu nav ul li {
+    list-style: none;
+    padding: 10px 0;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.25);
+  }
+  header .responsiveMenu .navMenu nav ul li:first-child {
+    border-top: none;
+  }
+  header .responsiveMenu .navMenu nav ul li a {
+    text-decoration: none;
+    color: #00adef;
+  }
+  header .responsiveMenu .navMenu nav ul li a:hover {
+    color: #80cc28;
+  }
+}
+@media screen and (max-width: 1080px) {
+  header .desktopMenu {
+    display: none;
+  }
+}
 header .desktopMenu ul li {
   list-style: none;
 }
@@ -117,8 +192,8 @@ header .desktopMenu .inf ul li {
 header .desktopMenu .inf ul li a {
   height: 100%;
   border-top: 2px solid transparent;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   color: #fff;
 }
 header .desktopMenu .inf ul li a:hover {
@@ -137,4 +212,24 @@ header .desktopMenu .inf ul li a i {
   height: 40px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+footer .containerFooter {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .containerFooter div {
+  padding: 20px;
+}
+footer .containerFooter .logoFooter img {
+  width: 100%;
+}
+footer .copyright {
+  background: #00adef;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */
