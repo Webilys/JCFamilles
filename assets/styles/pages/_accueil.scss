@@ -1,2 +1,46 @@
 #accueil {
+  .hero {
+    width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 80vh;
+
+    .imgHero {
+      border-radius: 0 0 360px 0;
+      box-shadow: 0 0 5px $blackShadow;
+      animation: bgSlide 15s infinite;
+
+      @keyframes bgSlide {
+        0% {
+          background: url(../img/1.jpeg) no-repeat center/cover;
+        }
+        25% {
+          background: url(../img/2.jpeg) no-repeat center/cover;
+        }
+        50% {
+          background: url(../img/3.jpeg) no-repeat center/cover;
+        }
+        75% {
+          background: url(../img/4.jpeg) no-repeat center/cover;
+        }
+
+        100% {
+          background: url(../img/1.jpeg) no-repeat center/cover;
+        }
+      }
+    }
+
+    .textHero {
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        h1 {
+        }
+      }
+    }
+  }
 }
