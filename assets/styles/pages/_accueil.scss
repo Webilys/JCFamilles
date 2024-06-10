@@ -39,6 +39,17 @@
 
       div {
         h1 {
+          color: $color1;
+          font-size: 3rem;
+          padding-bottom: 30px;
+
+          .green {
+            color: $color2;
+          }
+        }
+
+        p {
+          padding-bottom: 50px;
         }
       }
     }

@@ -328,6 +328,31 @@ footer .copyright a:hover {
   color: #000;
 }
 
+button {
+  background: none;
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+button a {
+  font-size: 1rem;
+  text-decoration: none;
+  background: #00adef;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: #fff;
+}
+button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+button:hover a {
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  background: #80cc28;
+}
+
 #accueil .hero {
   width: 100%;
   padding: 0;
@@ -387,4 +412,15 @@ footer .copyright a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+#accueil .hero .textHero div h1 {
+  color: #00adef;
+  font-size: 3rem;
+  padding-bottom: 30px;
+}
+#accueil .hero .textHero div h1 .green {
+  color: #80cc28;
+}
+#accueil .hero .textHero div p {
+  padding-bottom: 50px;
 }/*# sourceMappingURL=index.css.map */
