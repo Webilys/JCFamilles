@@ -1,7 +1,57 @@
 #accueil {
-  .heroDesktop {
+  .hero {
     width: 100%;
     padding: 0;
+
+    .imgHero {
+      box-shadow: 0 0 5px $blackShadow;
+      animation: bgSlide 20s infinite;
+
+      @keyframes bgSlide {
+        0% {
+          background: url(../img/1.jpeg) no-repeat center/cover;
+        }
+        25% {
+          background: url(../img/2.jpeg) no-repeat center/cover;
+        }
+        50% {
+          background: url(../img/3.jpeg) no-repeat center/cover;
+        }
+        75% {
+          background: url(../img/4.jpeg) no-repeat center/cover;
+        }
+
+        100% {
+          background: url(../img/1.jpeg) no-repeat center/cover;
+        }
+      }
+    }
+
+    div {
+      h1 {
+        font-family: $font1;
+        color: $color1;
+        padding-bottom: 30px;
+
+        .green {
+          color: $color2;
+        }
+      }
+
+      p {
+        padding-bottom: 50px;
+        font-size: 1.2rem;
+      }
+
+      button {
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .heroDesktop {
     display: grid;
     grid-template-columns: 50% 50%;
     height: 80vh;
@@ -12,27 +62,6 @@
 
     .imgHero {
       border-radius: 0 0 360px 0;
-      box-shadow: 0 0 5px $blackShadow;
-      animation: bgSlide 15s infinite;
-
-      @keyframes bgSlide {
-        0% {
-          background: url(../img/1.jpeg) no-repeat center/cover;
-        }
-        25% {
-          background: url(../img/2.jpeg) no-repeat center/cover;
-        }
-        50% {
-          background: url(../img/3.jpeg) no-repeat center/cover;
-        }
-        75% {
-          background: url(../img/4.jpeg) no-repeat center/cover;
-        }
-
-        100% {
-          background: url(../img/1.jpeg) no-repeat center/cover;
-        }
-      }
     }
 
     .textHero {
@@ -43,24 +72,7 @@
 
       div {
         h1 {
-          color: $color1;
           font-size: 3rem;
-          padding-bottom: 30px;
-
-          .green {
-            color: $color2;
-          }
-        }
-
-        p {
-          padding-bottom: 50px;
-          font-size: 1.2rem;
-        }
-
-        button {
-          a {
-            font-size: 1.2rem;
-          }
         }
       }
     }
@@ -68,60 +80,22 @@
 
   .heroResponsive {
     display: none;
-    width: 100%;
-    padding: 0;
 
     @media screen and (max-width: 770px) {
       display: block;
     }
 
     .imgHero {
-      box-shadow: 0 0 5px $blackShadow;
-      animation: bgSlide 20s infinite;
-
       div {
         padding: 50px;
         background: $whiteShadow;
         h1 {
-          color: $color1;
-          font-size: 3rem;
-          padding-bottom: 30px;
+          font-size: 2.4rem;
           text-shadow: 0 0 10px $white;
-
-          .green {
-            color: $color2;
-          }
         }
 
         p {
-          padding-bottom: 50px;
-          font-size: 1.2rem;
           text-shadow: 0 0 10px $white;
-        }
-
-        button {
-          a {
-            font-size: 1.2rem;
-          }
-        }
-      }
-
-      @keyframes bgSlide {
-        0% {
-          background: url(../img/1.jpeg) no-repeat center/cover;
-        }
-        25% {
-          background: url(../img/2.jpeg) no-repeat center/cover;
-        }
-        50% {
-          background: url(../img/3.jpeg) no-repeat center/cover;
-        }
-        75% {
-          background: url(../img/4.jpeg) no-repeat center/cover;
-        }
-
-        100% {
-          background: url(../img/1.jpeg) no-repeat center/cover;
         }
       }
     }
@@ -133,15 +107,24 @@
       grid-template-columns: repeat(4, 25%);
       gap: 20px;
 
+      @media screen and (max-width: 1000px) {
+        grid-template-columns: repeat(2, 50%);
+      }
+
+      @media screen and (max-width: 500px) {
+        grid-template-columns: 1fr;
+      }
       a {
         text-decoration: none;
         box-shadow: 0 0 10px $blackShadow;
         height: 100%;
         transition: 0.2s;
+        border-radius: 20px;
 
         .service {
           img {
             width: 100%;
+            border-radius: 20px 20px 0 0;
           }
 
           h3 {
