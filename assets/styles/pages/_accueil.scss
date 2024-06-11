@@ -1,10 +1,14 @@
 #accueil {
-  .hero {
+  .heroDesktop {
     width: 100%;
     padding: 0;
     display: grid;
     grid-template-columns: 50% 50%;
     height: 80vh;
+
+    @media screen and (max-width: 770px) {
+      display: none;
+    }
 
     .imgHero {
       border-radius: 0 0 360px 0;
@@ -56,6 +60,109 @@
         button {
           a {
             font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .heroResponsive {
+    display: none;
+    width: 100%;
+    padding: 0;
+
+    @media screen and (max-width: 770px) {
+      display: block;
+    }
+
+    .imgHero {
+      box-shadow: 0 0 5px $blackShadow;
+      animation: bgSlide 20s infinite;
+
+      div {
+        padding: 50px;
+        background: $whiteShadow;
+        h1 {
+          color: $color1;
+          font-size: 3rem;
+          padding-bottom: 30px;
+          text-shadow: 0 0 10px $white;
+
+          .green {
+            color: $color2;
+          }
+        }
+
+        p {
+          padding-bottom: 50px;
+          font-size: 1.2rem;
+          text-shadow: 0 0 10px $white;
+        }
+
+        button {
+          a {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      @keyframes bgSlide {
+        0% {
+          background: url(../img/1.jpeg) no-repeat center/cover;
+        }
+        25% {
+          background: url(../img/2.jpeg) no-repeat center/cover;
+        }
+        50% {
+          background: url(../img/3.jpeg) no-repeat center/cover;
+        }
+        75% {
+          background: url(../img/4.jpeg) no-repeat center/cover;
+        }
+
+        100% {
+          background: url(../img/1.jpeg) no-repeat center/cover;
+        }
+      }
+    }
+  }
+
+  .servicesAccueil {
+    .servicesContainer {
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      gap: 20px;
+
+      a {
+        text-decoration: none;
+        box-shadow: 0 0 10px $blackShadow;
+        height: 100%;
+        transition: 0.2s;
+
+        .service {
+          img {
+            width: 100%;
+          }
+
+          h3 {
+            color: $color1;
+            padding: 20px;
+          }
+        }
+
+        &:hover {
+          box-shadow: 0 0 10px $blackShadow;
+          // transform: scale(1.05);
+          overflow: hidden;
+
+          .service {
+            img {
+              transform: scale(250%) translateY(25%);
+            }
+
+            h3 {
+              display: none;
+            }
           }
         }
       }

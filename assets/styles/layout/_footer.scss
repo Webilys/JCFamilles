@@ -17,18 +17,12 @@ footer {
       }
 
       h2 {
-        color: $color1;
         font-size: 1.2rem;
-        text-transform: uppercase;
+        padding-bottom: 10px;
 
         &::after {
-          content: "";
-          display: block;
           width: 30%;
-          height: 3px;
-          border-bottom: 3px solid $color1;
-          padding-top: 10px;
-          margin-bottom: 20px;
+          margin: 0 0 20px 0;
 
           @media screen and (max-width: 1000px) {
             margin: 0 auto 20px;

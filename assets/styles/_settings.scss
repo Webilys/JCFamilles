@@ -41,3 +41,20 @@ h5,
 h6 {
   font-family: $font2;
 }
+
+h2 {
+  color: $color1;
+  font-size: 2rem;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 2px;
+    border-bottom: 3px solid $color1;
+    padding-top: 10px;
+    margin: 0 auto 20px auto;
+  }
+}
