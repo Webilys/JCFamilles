@@ -31,6 +31,7 @@ $text: #333;
   padding: 0;
   box-sizing: border-box;
   font-family: $font1;
+  color: $text;
 }
 
 h1,
@@ -45,7 +46,7 @@ h6 {
 h2 {
   color: $color1;
   font-size: 2rem;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   text-transform: uppercase;
 
   &::after {
