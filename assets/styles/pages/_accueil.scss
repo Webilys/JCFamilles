@@ -151,19 +151,8 @@
         }
 
         &:hover {
-          box-shadow: 0 0 10px $blackShadow;
-          // transform: scale(1.05);
-          overflow: hidden;
-
-          .service {
-            img {
-              transform: scale(250%) translateY(25%);
-            }
-
-            h3 {
-              display: none;
-            }
-          }
+          box-shadow: 0 0 20px $blackShadow;
+          transform: scale(1.05);
         }
       }
     }
