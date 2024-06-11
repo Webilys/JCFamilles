@@ -423,4 +423,8 @@ button:hover a {
 }
 #accueil .hero .textHero div p {
   padding-bottom: 50px;
+  font-size: 1.2rem;
+}
+#accueil .hero .textHero div button a {
+  font-size: 1.2rem;
 }/*# sourceMappingURL=index.css.map */
