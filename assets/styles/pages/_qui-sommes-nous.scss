@@ -1,0 +1,100 @@
+#quiSommesNous {
+  .aboutDetails {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+
+    .aboutImgDetails {
+      padding-left: 50px;
+      img {
+        width: 300px;
+        margin: 0 auto;
+        box-shadow: 0 0 10px $blackShadow;
+        border-radius: 360px;
+      }
+    }
+
+    .aboutTextDetails {
+      text-align: justify;
+      padding: 0 50px;
+
+      h2 {
+        &:after {
+          margin: 0 0 20px 0;
+        }
+      }
+    }
+  }
+  .values {
+    width: 100%;
+    background: $color1;
+    box-shadow: 0 0 10px $blackShadow;
+
+    h2 {
+      color: $white;
+      &::after {
+        border-bottom: 2px solid $white;
+      }
+    }
+
+    .valuesContainer {
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+
+      .value {
+        background: $white;
+        padding: 20px;
+        height: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px $blackShadow;
+
+        i {
+          font-size: 2rem;
+          color: $color1;
+          margin: 20px auto;
+          border: 3px solid $color1;
+          padding: 20px;
+          width: 80px;
+          height: 80px;
+          border-radius: 360px;
+        }
+        h3 {
+          color: $color1;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .cta {
+    width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    // margin-bottom: 50px;
+
+    .ctaImg {
+      img {
+        width: 100%;
+        border-radius: 0 0 360px 0;
+        box-shadow: 0 0 10px $blackShadow;
+      }
+    }
+
+    .ctaText {
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        padding-bottom: 30px;
+      }
+    }
+  }
+}

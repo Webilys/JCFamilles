@@ -34,13 +34,16 @@ $text: #333;
   color: $text;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font2;
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-family: $font2;
+// }
+
+h1 {
+  color: $color1;
 }
 
 h2 {
@@ -54,8 +57,12 @@ h2 {
     display: block;
     width: 10%;
     height: 2px;
-    border-bottom: 3px solid $color1;
-    padding-top: 10px;
+    border-bottom: 2px solid $color1;
+    padding-top: 20px;
     margin: 0 auto 20px auto;
   }
+}
+
+p {
+  line-height: 25px;
 }

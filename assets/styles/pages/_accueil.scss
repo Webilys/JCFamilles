@@ -29,8 +29,6 @@
 
     div {
       h1 {
-        font-family: $font1;
-        color: $color1;
         padding-bottom: 30px;
 
         .green {
@@ -171,7 +169,7 @@
         color: $white;
         &::after {
           margin: 0 0 20px 0;
-          border-bottom: 3px solid $white;
+          border-bottom: 2px solid $white;
         }
       }
 
@@ -241,7 +239,7 @@
     h2 {
       color: $white;
       &::after {
-        border-bottom: 3px solid $white;
+        border-bottom: 2px solid $white;
       }
     }
     .infosContactContainer {
@@ -284,10 +282,6 @@
           &:hover {
             color: $color1;
           }
-        }
-
-        p {
-          line-height: 30px;
         }
       }
     }

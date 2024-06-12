@@ -15,13 +15,8 @@
   color: #333;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "open-sans-semi-bold", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+h1 {
+  color: #00adef;
 }
 
 h2 {
@@ -35,9 +30,13 @@ h2::after {
   display: block;
   width: 10%;
   height: 2px;
-  border-bottom: 3px solid #00adef;
-  padding-top: 10px;
+  border-bottom: 2px solid #00adef;
+  padding-top: 20px;
   margin: 0 auto 20px auto;
+}
+
+p {
+  line-height: 25px;
 }
 
 header .responsiveMenu {
@@ -279,6 +278,7 @@ footer .containerFooter div h2 {
 footer .containerFooter div h2::after {
   width: 30%;
   margin: 0 0 20px 0;
+  padding-top: 10px;
 }
 @media screen and (max-width: 1000px) {
   footer .containerFooter div h2::after {
@@ -341,6 +341,16 @@ footer .copyright a {
 }
 footer .copyright a:hover {
   color: #000;
+}
+
+.title-page {
+  width: 100%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+.title-page .title h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
 
 button {
@@ -441,8 +451,6 @@ button:hover a {
   }
 }
 #accueil .hero div h1 {
-  font-family: "open-sans-regular", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: #00adef;
   padding-bottom: 30px;
 }
 #accueil .hero div h1 .green {
@@ -574,7 +582,7 @@ button:hover a {
 }
 #accueil .contactAccueil .contactText h2::after {
   margin: 0 0 20px 0;
-  border-bottom: 3px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 #accueil .contactAccueil .contactText p {
   padding-bottom: 40px;
@@ -651,7 +659,7 @@ button:hover a {
   color: #fff;
 }
 #accueil .infosContact h2::after {
-  border-bottom: 3px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 #accueil .infosContact .infosContactContainer {
   display: grid;
@@ -698,6 +706,103 @@ button:hover a {
 #accueil .infosContact .infosContactContainer .info a:hover {
   color: #00adef;
 }
-#accueil .infosContact .infosContactContainer .info p {
-  line-height: 30px;
+
+#quiSommesNous .aboutDetails {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#quiSommesNous .aboutDetails .aboutImgDetails {
+  padding-left: 50px;
+}
+#quiSommesNous .aboutDetails .aboutImgDetails img {
+  width: 300px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 360px;
+}
+#quiSommesNous .aboutDetails .aboutTextDetails {
+  text-align: justify;
+  padding: 0 50px;
+}
+#quiSommesNous .aboutDetails .aboutTextDetails h2:after {
+  margin: 0 0 20px 0;
+}
+#quiSommesNous .values {
+  width: 100%;
+  background: #00adef;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#quiSommesNous .values h2 {
+  color: #fff;
+}
+#quiSommesNous .values h2::after {
+  border-bottom: 2px solid #fff;
+}
+#quiSommesNous .values .valuesContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#quiSommesNous .values .valuesContainer .value {
+  background: #fff;
+  padding: 20px;
+  height: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#quiSommesNous .values .valuesContainer .value i {
+  font-size: 2rem;
+  color: #00adef;
+  margin: 20px auto;
+  border: 3px solid #00adef;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 360px;
+}
+#quiSommesNous .values .valuesContainer .value h3 {
+  color: #00adef;
+  padding-bottom: 20px;
+}
+#quiSommesNous .cta {
+  width: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#quiSommesNous .cta .ctaImg img {
+  width: 100%;
+  border-radius: 0 0 360px 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#quiSommesNous .cta .ctaText {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#quiSommesNous .cta .ctaText p {
+  padding-bottom: 30px;
 }/*# sourceMappingURL=index.css.map */
