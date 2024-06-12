@@ -148,8 +148,15 @@
     padding: 0;
     box-shadow: 0 0 10px $blackShadow;
 
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
     .contactImg {
       background: url(../img/5.webp) center/cover;
+
+      @media screen and (max-width: 800px) {
+        height: 300px;
+      }
       img {
         width: 100%;
       }
@@ -180,11 +187,25 @@
     grid-template-columns: 60% 40%;
     align-items: center;
 
+    @media screen and (max-width: 1000px) {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+
     .aboutText {
       text-align: left;
+      @media screen and (max-width: 1000px) {
+        text-align: center;
+      }
       h2 {
         &::after {
           margin: 0 0 20px 0;
+
+          @media screen and (max-width: 1000px) {
+            margin: 0 auto 20px auto;
+          }
         }
       }
     }
@@ -196,6 +217,10 @@
         margin: 0 auto;
         border-radius: 360px;
         box-shadow: 0 0 10px $blackShadow;
+
+        @media screen and (max-width: 1000px) {
+          margin: 0 auto 50px;
+        }
       }
     }
 
@@ -211,6 +236,7 @@
   .infosContact {
     width: 100%;
     background: $color1;
+    box-shadow: 0 0 10px $blackShadow;
 
     h2 {
       color: $white;
@@ -221,9 +247,14 @@
     .infosContactContainer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
       gap: 20px;
       width: 80%;
       margin: 0 auto;
+
+      @media screen and (max-width: 850px) {
+        grid-template-columns: 1fr;
+      }
 
       .info {
         background: $white;
@@ -245,6 +276,18 @@
         h3 {
           color: $color1;
           padding-bottom: 20px;
+        }
+
+        a {
+          text-decoration: none;
+          transition: 0.2s;
+          &:hover {
+            color: $color1;
+          }
+        }
+
+        p {
+          line-height: 30px;
         }
       }
     }

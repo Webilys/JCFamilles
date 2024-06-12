@@ -204,6 +204,9 @@ header .desktopMenu .sup .aboutMenu ul li:last-child a:hover {
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   background: #80cc28;
 }
+header .desktopMenu .sup .aboutMenu ul li:last-child a i {
+  color: #fff;
+}
 header .desktopMenu .inf ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -545,8 +548,18 @@ button:hover a {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
+@media screen and (max-width: 800px) {
+  #accueil .contactAccueil {
+    grid-template-columns: 1fr;
+  }
+}
 #accueil .contactAccueil .contactImg {
   background: url(../img/5.webp) center/cover;
+}
+@media screen and (max-width: 800px) {
+  #accueil .contactAccueil .contactImg {
+    height: 300px;
+  }
 }
 #accueil .contactAccueil .contactImg img {
   width: 100%;
@@ -574,11 +587,38 @@ button:hover a {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 1000px) {
+  #accueil .aboutAccueil {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 #accueil .aboutAccueil .aboutText {
   text-align: left;
 }
+@media screen and (max-width: 1000px) {
+  #accueil .aboutAccueil .aboutText {
+    text-align: center;
+  }
+}
 #accueil .aboutAccueil .aboutText h2::after {
   margin: 0 0 20px 0;
+}
+@media screen and (max-width: 1000px) {
+  #accueil .aboutAccueil .aboutText h2::after {
+    margin: 0 auto 20px auto;
+  }
 }
 #accueil .aboutAccueil .aboutImg {
   text-align: center;
@@ -590,6 +630,11 @@ button:hover a {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
+@media screen and (max-width: 1000px) {
+  #accueil .aboutAccueil .aboutImg img {
+    margin: 0 auto 50px;
+  }
+}
 #accueil .aboutAccueil .aboutText {
   padding: 0 50px;
 }
@@ -599,6 +644,8 @@ button:hover a {
 #accueil .infosContact {
   width: 100%;
   background: #00adef;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 #accueil .infosContact h2 {
   color: #fff;
@@ -609,9 +656,17 @@ button:hover a {
 #accueil .infosContact .infosContactContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
   width: 80%;
   margin: 0 auto;
+}
+@media screen and (max-width: 850px) {
+  #accueil .infosContact .infosContactContainer {
+    grid-template-columns: 1fr;
+  }
 }
 #accueil .infosContact .infosContactContainer .info {
   background: #fff;
@@ -634,4 +689,15 @@ button:hover a {
 #accueil .infosContact .infosContactContainer .info h3 {
   color: #00adef;
   padding-bottom: 20px;
+}
+#accueil .infosContact .infosContactContainer .info a {
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#accueil .infosContact .infosContactContainer .info a:hover {
+  color: #00adef;
+}
+#accueil .infosContact .infosContactContainer .info p {
+  line-height: 30px;
 }/*# sourceMappingURL=index.css.map */
