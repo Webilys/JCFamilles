@@ -851,10 +851,16 @@ button:hover a {
 }
 @media screen and (max-width: 1150px) {
   #quiSommesNous .cta .ctaImg img {
-    border-radius: 0 0 0 0;
-    width: 50%;
+    width: 500px;
+    border-radius: 20px 20px 20px 20px;
     margin: 50px auto 0;
-    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #quiSommesNous .cta .ctaImg img {
+    width: 100%;
+    border-radius: 0 0 0 0;
+    margin: 0 auto 0;
   }
 }
 #quiSommesNous .cta .ctaText {
@@ -878,4 +884,18 @@ button:hover a {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   padding: 20px;
   border-radius: 20px;
+  margin-bottom: 50px;
+}
+#recrutement .formRecrutement form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#recrutement .formRecrutement form label {
+  display: block;
+}
+#recrutement .formRecrutement form label input,
+#recrutement .formRecrutement form label textarea {
+  display: block;
+  margin: 10px auto 20px;
 }/*# sourceMappingURL=index.css.map */

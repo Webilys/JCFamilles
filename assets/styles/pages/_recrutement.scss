@@ -1,10 +1,21 @@
 #recrutement {
-  .intro {
-  }
-
   .formRecrutement {
     box-shadow: 0 0 10px $blackShadow;
     padding: 20px;
     border-radius: 20px;
+    margin-bottom: 50px;
+
+    form {
+      justify-content: center;
+      label {
+        display: block;
+
+        input,
+        textarea {
+          display: block;
+          margin: 10px auto 20px;
+        }
+      }
+    }
   }
 }
