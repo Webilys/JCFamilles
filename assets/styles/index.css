@@ -983,6 +983,49 @@ button:hover a {
   color: #00adef;
   padding-bottom: 20px;
 }
-#accompagnementHandicap .cta p {
+#accompagnementHandicap .cta {
+  width: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 1150px) {
+  #accompagnementHandicap .cta {
+    grid-template-columns: 1fr;
+  }
+}
+#accompagnementHandicap .cta .ctaImg img {
+  width: 100%;
+  border-radius: 0 0 360px 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 1150px) {
+  #accompagnementHandicap .cta .ctaImg img {
+    width: 500px;
+    border-radius: 20px 20px 20px 20px;
+    margin: 50px auto 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  #accompagnementHandicap .cta .ctaImg img {
+    width: 100%;
+    border-radius: 0 0 0 0;
+    margin: 0 auto 0;
+  }
+}
+#accompagnementHandicap .cta .ctaText {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#accompagnementHandicap .cta .ctaText p {
   padding-bottom: 30px;
 }/*# sourceMappingURL=index.css.map */
