@@ -15,12 +15,17 @@
   color: #333;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
   color: #00adef;
 }
 
 h2 {
-  color: #00adef;
   font-size: 2rem;
   padding-bottom: 20px;
   text-transform: uppercase;
@@ -356,10 +361,19 @@ footer .copyright a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: url(../img/bg-title.webp) center/cover;
+  padding: 0;
+}
+.title-page .title {
+  width: 100%;
+  padding: 50px 0;
+  background: rgba(255, 255, 255, 0.25);
 }
 .title-page .title h1 {
   text-transform: uppercase;
   font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
 }
 
 button {
@@ -724,8 +738,18 @@ button:hover a {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 1150px) {
+  #quiSommesNous .aboutDetails {
+    grid-template-columns: 1fr;
+  }
+}
 #quiSommesNous .aboutDetails .aboutImgDetails {
   padding-left: 50px;
+}
+@media screen and (max-width: 1150px) {
+  #quiSommesNous .aboutDetails .aboutImgDetails {
+    padding: 0 0 50px;
+  }
 }
 #quiSommesNous .aboutDetails .aboutImgDetails img {
   width: 300px;
@@ -738,8 +762,18 @@ button:hover a {
   text-align: justify;
   padding: 0 50px;
 }
+@media screen and (max-width: 1150px) {
+  #quiSommesNous .aboutDetails .aboutTextDetails {
+    text-align: center;
+  }
+}
 #quiSommesNous .aboutDetails .aboutTextDetails h2:after {
   margin: 0 0 20px 0;
+}
+@media screen and (max-width: 1150px) {
+  #quiSommesNous .aboutDetails .aboutTextDetails h2:after {
+    margin: 0 auto 20px auto;
+  }
 }
 #quiSommesNous .values {
   width: 100%;
@@ -765,6 +799,16 @@ button:hover a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 1020px) {
+  #quiSommesNous .values .valuesContainer {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+@media screen and (max-width: 580px) {
+  #quiSommesNous .values .valuesContainer {
+    grid-template-columns: 1fr;
+  }
 }
 #quiSommesNous .values .valuesContainer .value {
   background: #fff;
@@ -794,11 +838,24 @@ button:hover a {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+@media screen and (max-width: 1150px) {
+  #quiSommesNous .cta {
+    grid-template-columns: 1fr;
+  }
+}
 #quiSommesNous .cta .ctaImg img {
   width: 100%;
   border-radius: 0 0 360px 0;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 1150px) {
+  #quiSommesNous .cta .ctaImg img {
+    border-radius: 0 0 0 0;
+    width: 50%;
+    margin: 50px auto 0;
+    border-radius: 20px;
+  }
 }
 #quiSommesNous .cta .ctaText {
   padding: 50px;
@@ -814,4 +871,11 @@ button:hover a {
 }
 #quiSommesNous .cta .ctaText p {
   padding-bottom: 30px;
+}
+
+#recrutement .formRecrutement {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  border-radius: 20px;
 }/*# sourceMappingURL=index.css.map */

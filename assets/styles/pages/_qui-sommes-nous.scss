@@ -5,8 +5,16 @@
     grid-template-columns: 30% 70%;
     align-items: center;
 
+    @media screen and (max-width: 1150px) {
+      grid-template-columns: 1fr;
+    }
+
     .aboutImgDetails {
       padding-left: 50px;
+
+      @media screen and (max-width: 1150px) {
+        padding: 0 0 50px;
+      }
       img {
         width: 300px;
         margin: 0 auto;
@@ -19,9 +27,17 @@
       text-align: justify;
       padding: 0 50px;
 
+      @media screen and (max-width: 1150px) {
+        text-align: center;
+      }
+
       h2 {
         &:after {
           margin: 0 0 20px 0;
+
+          @media screen and (max-width: 1150px) {
+            margin: 0 auto 20px auto;
+          }
         }
       }
     }
@@ -46,6 +62,14 @@
       gap: 20px;
       align-items: center;
       justify-content: center;
+
+      @media screen and (max-width: 1020px) {
+        grid-template-columns: repeat(2, 50%);
+      }
+
+      @media screen and (max-width: 580px) {
+        grid-template-columns: 1fr;
+      }
 
       .value {
         background: $white;
@@ -77,13 +101,22 @@
     padding: 0;
     display: grid;
     grid-template-columns: 50% 50%;
-    // margin-bottom: 50px;
 
+    @media screen and (max-width: 1150px) {
+      grid-template-columns: 1fr;
+    }
     .ctaImg {
       img {
         width: 100%;
         border-radius: 0 0 360px 0;
         box-shadow: 0 0 10px $blackShadow;
+
+        @media screen and (max-width: 1150px) {
+          border-radius: 0 0 0 0;
+          width: 50%;
+          margin: 50px auto 0;
+          border-radius: 20px;
+        }
       }
     }
 

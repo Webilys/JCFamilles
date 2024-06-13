@@ -34,20 +34,17 @@ $text: #333;
   color: $text;
 }
 
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   font-family: $font2;
-// }
-
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
   color: $color1;
 }
 
 h2 {
-  color: $color1;
   font-size: 2rem;
   padding-bottom: 20px;
   text-transform: uppercase;
