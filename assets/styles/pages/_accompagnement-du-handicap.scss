@@ -1,0 +1,61 @@
+#accompagnementHandicap {
+  .values {
+    width: 100%;
+    background: $color1;
+    box-shadow: 0 0 10px $blackShadow;
+
+    h2 {
+      color: $white;
+      &::after {
+        border-bottom: 2px solid $white;
+      }
+    }
+
+    .valuesContainer {
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (max-width: 1020px) {
+        grid-template-columns: repeat(2, 50%);
+      }
+
+      @media screen and (max-width: 580px) {
+        grid-template-columns: 1fr;
+      }
+
+      .value {
+        background: $white;
+        padding: 20px;
+        height: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px $blackShadow;
+
+        i {
+          font-size: 2rem;
+          color: $color1;
+          margin: 20px auto;
+          border: 3px solid $color1;
+          padding: 20px;
+          width: 80px;
+          height: 80px;
+          border-radius: 360px;
+        }
+        h3 {
+          color: $color1;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .cta {
+    p {
+      padding-bottom: 30px;
+    }
+  }
+}

@@ -924,4 +924,65 @@ button:hover a {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   background: #80cc28;
+}
+
+#accompagnementHandicap .values {
+  width: 100%;
+  background: #00adef;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#accompagnementHandicap .values h2 {
+  color: #fff;
+}
+#accompagnementHandicap .values h2::after {
+  border-bottom: 2px solid #fff;
+}
+#accompagnementHandicap .values .valuesContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 1020px) {
+  #accompagnementHandicap .values .valuesContainer {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+@media screen and (max-width: 580px) {
+  #accompagnementHandicap .values .valuesContainer {
+    grid-template-columns: 1fr;
+  }
+}
+#accompagnementHandicap .values .valuesContainer .value {
+  background: #fff;
+  padding: 20px;
+  height: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#accompagnementHandicap .values .valuesContainer .value i {
+  font-size: 2rem;
+  color: #00adef;
+  margin: 20px auto;
+  border: 3px solid #00adef;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 360px;
+}
+#accompagnementHandicap .values .valuesContainer .value h3 {
+  color: #00adef;
+  padding-bottom: 20px;
+}
+#accompagnementHandicap .cta p {
+  padding-bottom: 30px;
 }/*# sourceMappingURL=index.css.map */
