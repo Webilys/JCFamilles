@@ -893,9 +893,35 @@ button:hover a {
 }
 #recrutement .formRecrutement form label {
   display: block;
+  width: 80%;
+  margin: 0 auto;
 }
 #recrutement .formRecrutement form label input,
 #recrutement .formRecrutement form label textarea {
+  width: 80%;
   display: block;
   margin: 10px auto 20px;
+  text-align: center;
+  padding: 5px 10px;
+  outline-color: #00adef;
+}
+#recrutement .formRecrutement form button {
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  background: #00adef;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: #fff;
+}
+#recrutement .formRecrutement form button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  background: #80cc28;
 }/*# sourceMappingURL=index.css.map */
