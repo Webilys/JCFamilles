@@ -926,19 +926,19 @@ button:hover a {
   background: #80cc28;
 }
 
-#accompagnementHandicap .values {
+#pages-services .values {
   width: 100%;
   background: #00adef;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
-#accompagnementHandicap .values h2 {
+#pages-services .values h2 {
   color: #fff;
 }
-#accompagnementHandicap .values h2::after {
+#pages-services .values h2::after {
   border-bottom: 2px solid #fff;
 }
-#accompagnementHandicap .values .valuesContainer {
+#pages-services .values .valuesContainer {
   width: 80%;
   margin: 0 auto;
   display: grid;
@@ -952,16 +952,16 @@ button:hover a {
           justify-content: center;
 }
 @media screen and (max-width: 1020px) {
-  #accompagnementHandicap .values .valuesContainer {
+  #pages-services .values .valuesContainer {
     grid-template-columns: repeat(2, 50%);
   }
 }
 @media screen and (max-width: 580px) {
-  #accompagnementHandicap .values .valuesContainer {
+  #pages-services .values .valuesContainer {
     grid-template-columns: 1fr;
   }
 }
-#accompagnementHandicap .values .valuesContainer .value {
+#pages-services .values .valuesContainer .value {
   background: #fff;
   padding: 20px;
   height: 100%;
@@ -969,7 +969,7 @@ button:hover a {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
-#accompagnementHandicap .values .valuesContainer .value i {
+#pages-services .values .valuesContainer .value i {
   font-size: 2rem;
   color: #00adef;
   margin: 20px auto;
@@ -979,42 +979,42 @@ button:hover a {
   height: 80px;
   border-radius: 360px;
 }
-#accompagnementHandicap .values .valuesContainer .value h3 {
+#pages-services .values .valuesContainer .value h3 {
   color: #00adef;
   padding-bottom: 20px;
 }
-#accompagnementHandicap .cta {
+#pages-services .cta {
   width: 100%;
   padding: 0;
   display: grid;
   grid-template-columns: 50% 50%;
 }
 @media screen and (max-width: 1150px) {
-  #accompagnementHandicap .cta {
+  #pages-services .cta {
     grid-template-columns: 1fr;
   }
 }
-#accompagnementHandicap .cta .ctaImg img {
+#pages-services .cta .ctaImg img {
   width: 100%;
   border-radius: 0 0 360px 0;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width: 1150px) {
-  #accompagnementHandicap .cta .ctaImg img {
+  #pages-services .cta .ctaImg img {
     width: 500px;
     border-radius: 20px 20px 20px 20px;
     margin: 50px auto 0;
   }
 }
 @media screen and (max-width: 550px) {
-  #accompagnementHandicap .cta .ctaImg img {
+  #pages-services .cta .ctaImg img {
     width: 100%;
     border-radius: 0 0 0 0;
     margin: 0 auto 0;
   }
 }
-#accompagnementHandicap .cta .ctaText {
+#pages-services .cta .ctaText {
   padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1026,6 +1026,6 @@ button:hover a {
       -ms-flex-align: center;
           align-items: center;
 }
-#accompagnementHandicap .cta .ctaText p {
+#pages-services .cta .ctaText p {
   padding-bottom: 30px;
 }/*# sourceMappingURL=index.css.map */
