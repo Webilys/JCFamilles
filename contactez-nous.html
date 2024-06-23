@@ -7,7 +7,26 @@
       Contactez-nous - JC Familles - Services à la personne à Marseille et ses
       alentours
     </title>
-    <!-- *************************************METADONNEES A AJOUTER ***********************-->
+    <meta
+      name="description"
+      content="Contactez JC Familles pour en savoir plus sur nos services d'aide à domicile à Marseille. Nous sommes là pour répondre à toutes vos questions."
+    />
+    <meta
+      name="keywords"
+      content="contactez-nous, aide à domicile, Marseille, JC Familles"
+    />
+    <meta property="og:title" content="Contactez-nous - JC Familles" />
+    <meta
+      property="og:description"
+      content="Contactez JC Familles pour en savoir plus sur nos services d'aide à domicile à Marseille. Nous sommes là pour répondre à toutes vos questions."
+    />
+    <meta property="og:image" content="./assets/img/og-image.jpg" />
+    <meta
+      property="og:url"
+      content="https://www.jcfamilles.fr/contactez-nous.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
     <link rel="shortcut icon" href="./assets/img/jcfamilles-icon.png" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
     <link
@@ -42,7 +61,6 @@
           <nav id="nav">
             <ul>
               <li><a href="./index.html">Accueil</a></li>
-
               <li>
                 <a href="./accompagnement-du-handicap.html"
                   >Accompagnement du handicap</a
@@ -129,7 +147,99 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main id="contactezNous">
+      <section class="title-page">
+        <div class="title">
+          <h1>Contactez-nous</h1>
+        </div>
+      </section>
+      <section class="intro">
+        <p>
+          Chez JC Familles, nous sommes à votre écoute pour répondre à toutes
+          vos questions et vous fournir les informations nécessaires sur nos
+          services d'aide à domicile.
+          <br /><br />
+          N'hésitez pas à nous contacter par téléphone, email ou via notre
+          formulaire de contact. Nous serons ravis de vous aider et de vous
+          accompagner dans vos démarches.
+        </p>
+      </section>
+      <section class="contact-details">
+        <div class="contact-coordonnees">
+          <h2>Coordonnées</h2>
+          <div class="containerCoordonnees">
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <h3>Téléphone</h3>
+              <a href="tel:0767551504">07.67.55.15.04</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <h3>Email</h3>
+              <a href="mailto:contact@jcfamilles.fr">contact@jcfamilles.fr</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-map-marker-alt"></i>
+              <h3>Adresse</h3>
+              <p>
+                75 Allée Grande Bastide Cazaulx
+                <br />
+                Bt D3 Résidence Les FaÏenciers
+                <br />
+                13011 Marseille
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h2>Formulaire de Contact</h2>
+          <form>
+            <label for="name">
+              Nom et prénom<sup>*</sup>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nom et prénom"
+                required
+              />
+            </label>
+            <label for="email"
+              >Email<sup>*</sup>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </label>
+            <label for="phone"
+              >Téléphone<sup>*</sup>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Téléphone"
+                required
+              />
+            </label>
+            <label for="message"
+              >Message<sup>*</sup>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Saisissez votre message..."
+                required
+              ></textarea>
+            </label>
+            <button type="submit" class="ctaButton">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="containerFooter">
         <div class="logoFooter">

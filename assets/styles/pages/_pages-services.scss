@@ -1,4 +1,19 @@
 #pages-services {
+  .intro {
+    .img-intro {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+
+      img {
+        width: 100%;
+        box-shadow: 0 0 10px $blackShadow;
+        border-radius: 360px;
+      }
+    }
+  }
+
   .values {
     width: 100%;
     background: $color1;

@@ -926,6 +926,18 @@ button:hover a {
   background: #80cc28;
 }
 
+#pages-services .intro .img-intro {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+#pages-services .intro .img-intro img {
+  width: 100%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 360px;
+}
 #pages-services .values {
   width: 100%;
   background: #00adef;
@@ -1028,4 +1040,95 @@ button:hover a {
 }
 #pages-services .cta .ctaText p {
   padding-bottom: 30px;
+}
+
+#contactezNous .intro {
+  padding-bottom: 0;
+}
+#contactezNous .contact-details {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 20px;
+}
+@media screen and (max-width: 1250px) {
+  #contactezNous .contact-details {
+    grid-template-columns: 1fr;
+  }
+}
+#contactezNous .contact-details .contact-coordonnees {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1250px) {
+  #contactezNous .contact-details .contact-coordonnees .containerCoordonnees {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+#contactezNous .contact-details .contact-coordonnees .containerCoordonnees div i {
+  display: block;
+  font-size: 2rem;
+  color: #00adef;
+  margin: 20px auto;
+  border: 3px solid #00adef;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 360px;
+}
+#contactezNous .contact-details .contact-coordonnees .containerCoordonnees div h3 {
+  padding-bottom: 20px;
+}
+#contactezNous .contact-details .contact-coordonnees .containerCoordonnees div a {
+  text-decoration: none;
+}
+#contactezNous .contact-details .contact-form {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+#contactezNous .contact-details .contact-form form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#contactezNous .contact-details .contact-form form label {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+#contactezNous .contact-details .contact-form form label input,
+#contactezNous .contact-details .contact-form form label textarea {
+  width: 80%;
+  display: block;
+  margin: 10px auto 20px;
+  text-align: center;
+  padding: 5px 10px;
+  outline-color: #00adef;
+}
+#contactezNous .contact-details .contact-form form button {
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  background: #00adef;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: #fff;
+}
+#contactezNous .contact-details .contact-form form button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  background: #80cc28;
 }/*# sourceMappingURL=index.css.map */
