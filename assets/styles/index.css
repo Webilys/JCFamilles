@@ -1063,10 +1063,56 @@ button:hover a {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 1250px) {
+  #contactezNous .contact-details .contact-coordonnees {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #contactezNous .contact-details .contact-coordonnees {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    padding: 50px 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1250px) {
   #contactezNous .contact-details .contact-coordonnees .containerCoordonnees {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  #contactezNous .contact-details .contact-coordonnees .containerCoordonnees {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #contactezNous .contact-details .contact-coordonnees .containerCoordonnees {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 1250px) {
+  #contactezNous .contact-details .contact-coordonnees .containerCoordonnees div {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #contactezNous .contact-details .contact-coordonnees .containerCoordonnees div {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+    border-radius: 0;
   }
 }
 #contactezNous .contact-details .contact-coordonnees .containerCoordonnees div i {
